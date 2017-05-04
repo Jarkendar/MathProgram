@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">MathTest</string>
+    <string name="button_random">Trening</string>
+    <string name="button_addition">Dodawanie</string>
+    <string name="button_substraction">Odejmowanie</string>
+    <string name="button_multiplication">Mnożenie</string>
+    <string name="button_divide">Dzielenie</string>
+    <string name="button_power">Potęgowanie</string>
+    <string name="button_root">Pierwiastkowanie</string>
+    <string name="text_level">Poziom trudności: </string>
+    <string name="text_percent">%</string>
+    <string name="button_end">Koniec</string>
+    <string name="button_accept">Sprawdź</string>
+    <string name="text_avgtime_description">Średni czas odpowiedzi: </string>
+    <string name="text_good_bad_description">Odpowiedzi dobre/złe: </string>
+    <string name="text_congratulation">Gratulacje</string>
+
+    <integer name="add_score">20</integer>
+    <integer name="add_score_rest">0</integer>
+    <integer name="sub_score">20</integer>
+    <integer name="sub_score_rest">0</integer>
+    <integer name="mul_score">20</integer>
+    <integer name="mul_score_rest">0</integer>
+    <integer name="div_score">20</integer>
+    <integer name="div_score_rest">0</integer>
+    <integer name="pow_score">20</integer>
+    <integer name="pow_score_rest">0</integer>
+    <integer name="root_score">20</integer>
+    <integer name="root_score_rest">0</integer>
+
+    <string name="title_activity_count_">Count_Activity</string>
+    <string name="text_time_definition">Czas odpowiedzi: </string>
+</resources>

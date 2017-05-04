@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.jarek.mathprogram.ActivityCount"
+    android:background="@color/background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/text_equation"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/accept"
+        android:text="Równianie"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_accept"
+        android:id="@+id/accept"
+        android:layout_below="@+id/editText"
+        android:layout_alignRight="@+id/count_end"
+        android:layout_alignEnd="@+id/count_end"
+        android:onClick="click_Check" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button_end"
+        android:id="@+id/count_end"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="click_end"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="50%"
+        android:id="@+id/text_score"
+        android:textColor="@android:color/white"
+        android:layout_alignBaseline="@+id/accept"
+        android:layout_alignBottom="@+id/accept"
+        android:layout_alignRight="@+id/text_equation"
+        android:layout_alignEnd="@+id/text_equation"
+        android:textSize="14dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/text_level"
+        android:id="@+id/text_level"
+        android:textColor="@android:color/white"
+        android:layout_alignBaseline="@+id/text_score"
+        android:layout_alignBottom="@+id/text_score"
+        android:layout_toLeftOf="@+id/text_score"
+        android:layout_toStartOf="@+id/text_score"
+        android:layout_marginRight="8dp"
+        android:textSize="14dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/accept"
+        android:layout_alignStart="@+id/accept"
+        android:textColor="@android:color/white"
+        android:maxLength="5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0ms"
+        android:id="@+id/texttime"
+        android:layout_below="@+id/accept"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#fff"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/text_time_definition"
+        android:id="@+id/text_time_def"
+        android:layout_below="@+id/accept"
+        android:layout_toLeftOf="@+id/texttime"
+        android:layout_toStartOf="@+id/texttime"
+        android:textColor="#fff"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0ms"
+        android:id="@+id/avgtime_text"
+        android:layout_below="@+id/texttime"
+        android:layout_alignRight="@+id/texttime"
+        android:layout_alignEnd="@+id/texttime"
+        android:textColor="#fff"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/text_avgtime_description"
+        android:id="@+id/avgtime_description_text"
+        android:layout_below="@+id/text_time_def"
+        android:layout_toLeftOf="@+id/avgtime_text"
+        android:layout_toStartOf="@+id/avgtime_text"
+        android:textColor="#fff"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="0/0"
+        android:id="@+id/good_bad_text"
+        android:layout_below="@+id/avgtime_text"
+        android:layout_alignRight="@+id/avgtime_text"
+        android:layout_alignEnd="@+id/avgtime_text"
+        android:textColor="#fff"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/text_good_bad_description"
+        android:id="@+id/good"
+        android:layout_alignTop="@+id/good_bad_text"
+        android:layout_toLeftOf="@+id/good_bad_text"
+        android:layout_toStartOf="@+id/good_bad_text"
+        android:textColor="#fff"
+        android:layout_marginRight="10dp" />
+</RelativeLayout>

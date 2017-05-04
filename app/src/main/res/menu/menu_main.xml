@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <item android:id="@+id/menu_addition"
+        android:title="@string/button_addition"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/menu_substraction"
+        android:title="@string/button_substraction"
+        android:orderInCategory="110"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/menu_multi"
+        android:title="@string/button_multiplication"
+        android:orderInCategory="120"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/menu_divide"
+        android:title="@string/button_divide"
+        android:orderInCategory="130"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/menu_power"
+        android:title="@string/button_power"
+        android:orderInCategory="140"
+        app:showAsAction="ifRoom"/>
+    <item android:id="@+id/menu_root"
+        android:title="@string/button_root"
+        android:orderInCategory="150"
+        app:showAsAction="ifRoom"/>
+</menu>
